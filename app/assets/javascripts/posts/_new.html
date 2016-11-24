@@ -1,0 +1,15 @@
+<form ng-submit="addPost()" style="margin-top:30px;">
+
+  <h2>New Post</h2>
+
+  <div class="form-group">
+
+    <label for="title">Title</label>
+    <input id="title" type="text" class="form-control" ng-model="title"></input>
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea id="content" class="form-control" ng-model="content"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

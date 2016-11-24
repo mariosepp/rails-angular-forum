@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forum</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body ng-app="forum">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+      <div ng-include="'menu/_menu.html'"></div>
+        <ui-view></ui-view>
+      </div>
+    </div>
+
+  </body>
+</html>
