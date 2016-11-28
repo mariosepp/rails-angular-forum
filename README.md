@@ -1,24 +1,22 @@
-# README
+1. Get the project:
+git clone https://github.com/mariosepp/rails-angular-forum.git
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2. Install gems:
+bundle
 
-Things you may want to cover:
+3. Install assets:
+bower install
 
-* Ruby version
+4. Set up the database username and password in config/database.yml.
 
-* System dependencies
+5. Migrate the database and insert admin user:
+rake db:setup
 
-* Configuration
+6. Run:
+rails s
 
-* Database creation
+7. Go to http://localhost:3000/#/home
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+8. Create a new account or login with admin:
+username: admin
+password: password
