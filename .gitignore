@@ -21,4 +21,6 @@
 .byebug_history
 
 # App
-/vendor
+/vendor/assets/*
+!/vendor/assets/stylesheets/.keep
+!/vendor/assets/bower_components/.keep
