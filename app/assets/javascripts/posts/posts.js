@@ -32,5 +32,11 @@ angular.module('forum')
       return $http.post('/posts/' + id + '/comments.json', comment);
     };
 
+    o.destroyComment = function(post_id, id) {
+      return $http.delete('/posts/' + post_id + '/comments/' + id + '.json').success(function(data){
+        o.getAll()
+      });
+    };
+
     return o;
   }])

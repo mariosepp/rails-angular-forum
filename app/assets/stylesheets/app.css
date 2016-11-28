@@ -1,0 +1,20 @@
+td.comment-username {
+  font-size: 20px;
+  text-align: center;
+  min-width: 20%;
+}
+
+td.actions {
+  margin: center;
+  min-width: 20%;
+}
+
+td.comment-body {
+  font-size: 16px;
+  white-space: pre-line
+}
+
+td.column {
+  font-size: 20px; 
+  margin-left: 10px;
+}

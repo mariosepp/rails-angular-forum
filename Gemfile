@@ -12,6 +12,7 @@ gem 'angular-rails-templates'
 gem 'responders'
 gem 'angular_rails_csrf'
 gem 'devise', '~> 4.2.0'
+gem 'cancan'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

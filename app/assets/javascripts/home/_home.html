@@ -10,23 +10,19 @@
   </thead>
   <tbody>
     <tr ng-repeat="post in posts">
-      <td>
-        <span style="font-size:20px; margin-left:10px;">
-          <a href="#/posts/{{post.id}}">{{post.title}}</a>
-        </span>
+      <td class="column">
+        <a href="#/posts/{{post.id}}">{{post.title}}</a>
       </td>
-      <td>
-        <span style="font-size:20px; margin-left:10px;">
-          <a ng-href="#/users/{{post.user.username}}">{{post.user.username}}</a>
-        </span>
+      <td class="column">
+        <a ng-href="#/users/{{post.user.username}}">{{post.user.username}}</a>
       </td>
-      <td>
-        <span style="font-size:20px; margin-left:10px;">
-          <a class="btn btn-primary" ng-click="destroyPost(post.id)">Delete</a>
-        </span>
+      <td class="actions">
+        <a class="btn btn-primary" ng-click="destroyPost(post.id)">Delete</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-<a class="btn btn-primary" onclick="window.location.href='#/posts/new';">Add Post</a>
+<div>
+  <a class="btn btn-primary" onclick="window.location.href='#/posts/new';">Add Post</a>
+</div>

@@ -17,4 +17,8 @@ angular.module('forum')
         
         $scope.body = '';
       };
+
+      $scope.destroyComment = function(post_id, id){
+        posts.destroyComment(post_id, id);
+      };
   }]);

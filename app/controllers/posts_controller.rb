@@ -10,7 +10,9 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    respond_with Post.find(params[:id]).destroy
+    @post = Post.find(params[:id])
+    authorize! :destroy, @post
+    respond_with @post.destroy
   end
 
   def show
